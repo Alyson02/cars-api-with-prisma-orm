@@ -1,7 +1,7 @@
 import httpStatus from "http-status";
 
 import { Request, Response } from "express";
-import carService from "../services/carService.js";
+import carService from "../services/carService";
 import { cars } from "@prisma/client";
 
 async function getAllCars(req: Request, res: Response) {

@@ -1,5 +1,5 @@
 import { cars } from "@prisma/client";
-import db from "../config/database.js";
+import db from "../config/database";
 
 async function getCars() {
   return await db.cars.findMany();
